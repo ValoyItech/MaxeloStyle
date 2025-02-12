@@ -1,0 +1,491 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #faf7f2;
+    color: #2d2d2d;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Animated Text */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 20vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Pricing Cards */
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+}
+
+.price-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: scale(1);
+}
+
+/* Contact Icons */
+.contact-bar {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: #7a5c58;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #7a5c58;
+}
+
+/* Responsive Menu */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+
+/* GALLERY STYLING */
+.gallery-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fade-in animation */
+.gallery-slide.active {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px; /* Smaller height for mobile */
+    }
+}
+
+
+/* CONTACT SECTION */
+.contact-section {
+    background: linear-gradient(135deg, #7a5c58, #5a3c36);
+    padding: 4rem 2rem;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Contact Details */
+.contact-details {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Icons */
+.contact-details p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    gap: 12px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-details p:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: #ffdd57;
+}
+
+/* Links */
+.contact-details a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-details a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-details {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* NAVIGATION STYLES */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(243, 223, 226); /* Set background to pink */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Hide Navbar */
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+}
+
+/* Responsive Menu */
+@media (max-width: 1024px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: white;
+        width: 200px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* BUTTON STYLING */
+.cta-button {
+    display: inline-block;
+    background: purple; /* Change button color to purple */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    background: #6a0dad; /* Slightly lighter purple */
+    transform: scale(1.05);
+}
+
+/* Apply to Pricing Section */
+.pricing-cards .cta-button {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Make all sections fit within the screen width */
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: pink;
+        width: 200px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure text wraps properly */
+h1, h2, h3, p {
+    word-wrap: break-word;
+}
+@media (max-width: 768px) {
+    .pricing-cards, .gallery-grid {
+        grid-template-columns: 1fr; /* Stack items in one column */
+    }
+
+    .gallery-item {
+        height: 250px; /* Reduce gallery image height for mobile */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .contact-details p {
+        flex-direction: column; /* Stack icon and text on top of each other */
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .contact-details i {
+        font-size: 1.8rem; /* Bigger icons for better touch accessibility */
+        margin-bottom: 5px;
+    }
+
+    .contact-details a {
+        display: block; /* Ensures clickable links don’t break */
+        font-size: 1rem;
+        word-break: break-word; /* Prevents long URLs from overflowing */
+    }
+}
+
+.hero-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Add this line */
+    image-rendering: -webkit-optimize-contrast; /* Improve rendering */
+}
