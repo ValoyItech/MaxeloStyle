@@ -489,3 +489,21 @@ h1, h2, h3, p {
     background-repeat: no-repeat; /* Add this line */
     image-rendering: -webkit-optimize-contrast; /* Improve rendering */
 }
+
+.site-footer {
+    background: #7a5c58; /* Matching theme */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #ffdd57; /* Gold accent */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
