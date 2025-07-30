@@ -107,7 +107,15 @@
         .slide-dot.active {
             background-color: white !important;
         }
+
+        .product-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
     </style>
+    
 </head>
 <body class="font-montserrat bg-gray-50">
     <!-- Navigation -->
@@ -144,160 +152,149 @@
         </div>
     </nav>
 
-    <!-- <!-- Hero Slideshow Section -->
-<section id="home" class="relative min-h-screen overflow-hidden hidden sm:block">
-    <div class="hero-slider relative w-full h-screen">
 
-        <!-- Slide 1 - Xibelani Special -->
-        <div class="slide active absolute inset-0 bg-gradient-to-br from-hot-pink via-pink-500 to-black diagonal-pattern">
-            <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white z-10">
-                    <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
-                        JULY XIBELANI
-                        <span class="text-gold">SPECIAL</span>
-                    </h2>
-                    <p class="text-xl md:text-2xl mb-8 opacity-90">
-                        Premium traditional wear meets modern style. Limited time offer ends July 31, 2025.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" 
-                                class="btn-primary px-8 py-4 rounded-full font-semibold text-lg">
-                            Shop Collection
-                        </button>
-                        <a href="https://wa.me/27614571294" 
-                           class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg text-center">
-                            WhatsApp Order
-                        </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
-                        <img src="images/xibelani.svg" 
-                             alt="Xibelani Skirt Collection" 
-                             class="w-full rounded-2xl shadow-2xl">
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- ==========================
+     DESKTOP / TABLET HERO
+=============================== -->
+<section id="home-desktop"
+         class="relative min-h-screen overflow-hidden hidden md:block">
+  <div class="hero-slider relative w-full h-screen">
 
-        <!-- Slide 2 - Crochet Tops -->
-        <div class="slide absolute inset-0 bg-gradient-to-br from-gold via-yellow-400 to-orange-500 diagonal-pattern">
-            <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-black z-10">
-                    <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
-                        HANDCRAFTED
-                        <span class="text-hot-pink">CROCHET</span>
-                    </h2>
-                    <p class="text-xl md:text-2xl mb-8 opacity-90">
-                        Beautiful crochet tops for all ages. Expertly crafted with premium materials.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" 
-                                class="bg-hot-pink text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-600 transition-colors">
-                            View Crochet Tops
-                        </button>
-                        <a href="https://wa.me/27614571294" 
-                           class="bg-black text-white px-8 py-4 rounded-full font-semibold text-lg text-center hover:bg-gray-800 transition-colors">
-                            Order Now
-                        </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8">
-                        <img src="images/top.svg" 
-                             alt="Crochet Tops Collection" 
-                             class="w-full rounded-2xl shadow-2xl">
-                    </div>
-                </div>
-            </div>
+    <!-- Slide 1 -->
+    <div class="slide active absolute inset-0 bg-gradient-to-br from-hot-pink via-pink-500 to-black diagonal-pattern">
+      <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-white z-10">
+          <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
+            JULY XIBELANI <span class="text-gold">SPECIAL</span>
+          </h2>
+          <p class="text-xl md:text-2xl mb-8 opacity-90">
+            Premium traditional wear meets modern style. Limited time offer ends July 31, 2025.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
+                    class="btn-primary px-8 py-4 rounded-full font-semibold text-lg">
+              Shop Collection
+            </button>
+            <a href="https://wa.me/27614571294"
+               class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg text-center">
+              WhatsApp Order
+            </a>
+          </div>
         </div>
-
-        <!-- Slide 3 - Complete Sets -->
-        <div class="slide absolute inset-0 bg-gradient-to-br from-purple-600 via-hot-pink to-red-500 diagonal-pattern">
-            <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white z-10">
-                    <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
-                        COMPLETE
-                        <span class="text-gold">OUTFITS</span>
-                    </h2>
-                    <p class="text-xl md:text-2xl mb-8 opacity-90">
-                        Mix and match our Xibelani skirts with crochet tops for the perfect traditional look.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})" 
-                                class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg">
-                            Shop Complete Sets
-                        </button>
-                        <a href="https://wa.me/27614571294" 
-                           class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg text-center hover:bg-white hover:text-hot-pink transition-colors">
-                            Custom Order
-                        </a>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
-                        <img src="images/complete.svg" 
-                             alt="Complete Outfit Sets" 
-                             class="w-full rounded-2xl shadow-2xl">
-                    </div>
-                </div>
-            </div>
+        <div class="relative">
+          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
+            <img src="images/xibelani.svg" alt="Xibelani Skirt Collection" class="w-full rounded-2xl shadow-2xl">
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- Slider Navigation -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
-        <button onclick="currentSlide(1)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors active"></button>
-        <button onclick="currentSlide(2)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
-        <button onclick="currentSlide(3)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+    <!-- Slide 2 -->
+    <div class="slide absolute inset-0 bg-gradient-to-br from-gold via-yellow-400 to-orange-500 diagonal-pattern">
+      <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-black z-10">
+          <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
+            HANDCRAFTED <span class="text-hot-pink">CROCHET</span>
+          </h2>
+          <p class="text-xl md:text-2xl mb-8 opacity-90">
+            Beautiful crochet tops for all ages. Expertly crafted with premium materials.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
+                    class="bg-hot-pink text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-pink-600">
+              View Crochet Tops
+            </button>
+            <a href="https://wa.me/27614571294"
+               class="bg-black text-white px-8 py-4 rounded-full font-semibold text-lg text-center hover:bg-gray-800">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8">
+            <img src="images/top.svg" alt="Crochet Tops Collection" class="w-full rounded-2xl shadow-2xl">
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Slider Arrows -->
-    <button onclick="plusSlides(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors z-20">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-        </svg>
+    <!-- Slide 3 -->
+    <div class="slide absolute inset-0 bg-gradient-to-br from-purple-600 via-hot-pink to-red-500 diagonal-pattern">
+      <div class="max-w-7xl mx-auto px-4 h-full grid lg:grid-cols-2 gap-12 items-center">
+        <div class="text-white z-10">
+          <h2 class="font-poppins font-bold text-5xl md:text-7xl mb-6 leading-tight">
+            COMPLETE <span class="text-gold">OUTFITS</span>
+          </h2>
+          <p class="text-xl md:text-2xl mb-8 opacity-90">
+            Mix and match our Xibelani skirts with crochet tops for the perfect traditional look.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
+                    class="btn-secondary px-8 py-4 rounded-full font-semibold text-lg">
+              Shop Complete Sets
+            </button>
+            <a href="https://wa.me/27614571294"
+               class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg text-center hover:bg-white hover:text-hot-pink">
+              Custom Order
+            </a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8">
+            <img src="images/complete.svg" alt="Complete Outfit Sets" class="w-full rounded-2xl shadow-2xl">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots & Arrows -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+      <button onclick="currentSlide(1)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors active"></button>
+      <button onclick="currentSlide(2)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+      <button onclick="currentSlide(3)" class="slide-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+    </div>
+    <button onclick="plusSlides(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors z-20">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
     </button>
-    <button onclick="plusSlides(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors z-20">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-        </svg>
+    <button onclick="plusSlides(1)" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors z-20">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
     </button>
+  </div>
 </section>
 
-<!-- Hero Slideshow Section – MOBILE-FIRST -->
-<section id="home-mobile" class="relative min-h-screen overflow-hidden sm:hidden">
+
+
+<!-- ==========================
+     MOBILE-ONLY HERO
+=============================== -->
+<section id="home-mobile"
+         class="relative min-h-screen overflow-hidden md:hidden">
   <div class="hero-slider relative w-full h-screen">
 
     <!-- Slide 1 -->
     <div class="slide active absolute inset-0 bg-gradient-to-br from-hot-pink via-pink-500 to-black diagonal-pattern">
       <div class="max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <div class="text-white z-10 px-2">
-          <h2 class="font-poppins font-bold text-4xl leading-tight sm:text-5xl md:text-7xl mb-4">
-            JULY<br>XIBELANI
-            <span class="text-gold">SPECIAL</span>
+          <h2 class="font-poppins font-bold text-4xl leading-tight mb-4">
+            JULY<br>XIBELANI <span class="text-gold">SPECIAL</span>
           </h2>
-          <p class="text-base sm:text-lg md:text-2xl mb-6 opacity-90">
-            Premium traditional wear meets modern style.<br>
-            <span class="hidden sm:inline">Limited time offer ends July 31, 2025.</span>
+          <p class="text-base mb-6 opacity-90">
+            Premium traditional wear meets modern style.<br>Limited time offer ends July 31, 2025.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
-                    class="btn-primary px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+                    class="btn-primary px-6 py-3 rounded-full font-semibold text-sm">
               Shop Collection
             </button>
             <a href="https://wa.me/27614571294"
-               class="btn-secondary px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+               class="btn-secondary px-6 py-3 rounded-full font-semibold text-sm">
               WhatsApp Order
             </a>
           </div>
         </div>
-
-        <!-- Image -->
-        <div class="w-full max-w-xs sm:max-w-sm md:max-w-md mt-6">
-          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 sm:p-4">
-            <img src="images/xibelani.svg" alt="Xibelani Skirt Collection"
-                 class="w-full rounded-xl shadow-2xl">
+        <div class="w-full max-w-xs mt-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-3">
+            <img src="images/xibelani.svg" alt="Xibelani Skirt Collection" class="w-full rounded-xl shadow-2xl">
           </div>
         </div>
       </div>
@@ -307,30 +304,26 @@
     <div class="slide absolute inset-0 bg-gradient-to-br from-gold via-yellow-400 to-orange-500 diagonal-pattern">
       <div class="max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <div class="text-black z-10 px-2">
-          <h2 class="font-poppins font-bold text-4xl leading-tight sm:text-5xl md:text-7xl mb-4">
-            HANDCRAFTED<br>
-            <span class="text-hot-pink">CROCHET</span>
+          <h2 class="font-poppins font-bold text-4xl leading-tight mb-4">
+            HANDCRAFTED<br><span class="text-hot-pink">CROCHET</span>
           </h2>
-          <p class="text-base sm:text-lg md:text-2xl mb-6 opacity-90">
-            Beautiful crochet tops for all ages.<br>
-            <span class="hidden sm:inline">Expertly crafted with premium materials.</span>
+          <p class="text-base mb-6 opacity-90">
+            Beautiful crochet tops for all ages.<br>Expertly crafted with premium materials.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
-                    class="bg-hot-pink text-white px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+                    class="bg-hot-pink text-white px-6 py-3 rounded-full font-semibold text-sm">
               View Crochet Tops
             </button>
             <a href="https://wa.me/27614571294"
-               class="bg-black text-white px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+               class="bg-black text-white px-6 py-3 rounded-full font-semibold text-sm">
               Order Now
             </a>
           </div>
         </div>
-
-        <div class="w-full max-w-xs sm:max-w-sm md:max-w-md mt-6">
-          <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-3 sm:p-4">
-            <img src="images/top.svg" alt="Crochet Tops Collection"
-                 class="w-full rounded-xl shadow-2xl">
+        <div class="w-full max-w-xs mt-6">
+          <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-3">
+            <img src="images/top.svg" alt="Crochet Tops Collection" class="w-full rounded-xl shadow-2xl">
           </div>
         </div>
       </div>
@@ -340,55 +333,38 @@
     <div class="slide absolute inset-0 bg-gradient-to-br from-purple-600 via-hot-pink to-red-500 diagonal-pattern">
       <div class="max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
         <div class="text-white z-10 px-2">
-          <h2 class="font-poppins font-bold text-4xl leading-tight sm:text-5xl md:text-7xl mb-4">
-            COMPLETE<br>
-            <span class="text-gold">OUTFITS</span>
+          <h2 class="font-poppins font-bold text-4xl leading-tight mb-4">
+            COMPLETE<br><span class="text-gold">OUTFITS</span>
           </h2>
-          <p class="text-base sm:text-lg md:text-2xl mb-6 opacity-90">
+          <p class="text-base mb-6 opacity-90">
             Mix & match skirts with tops for the perfect look.
           </p>
           <div class="flex flex-col sm:flex-row gap-3 justify-center">
             <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})"
-                    class="btn-secondary px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+                    class="btn-secondary px-6 py-3 rounded-full font-semibold text-sm">
               Shop Sets
             </button>
             <a href="https://wa.me/27614571294"
-               class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-sm sm:text-base">
+               class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-sm">
               Custom Order
             </a>
           </div>
         </div>
-
-        <div class="w-full max-w-xs sm:max-w-sm md:max-w-md mt-6">
-          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 sm:p-4">
-            <img src="images/complete.svg" alt="Complete Outfit Sets"
-                 class="w-full rounded-xl shadow-2xl">
+        <div class="w-full max-w-xs mt-6">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-3">
+            <img src="images/complete.svg" alt="Complete Outfit Sets" class="w-full rounded-xl shadow-2xl">
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Dots -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
-    <button onclick="currentSlide(1)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors active"></button>
-    <button onclick="currentSlide(2)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
-    <button onclick="currentSlide(3)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+    <!-- Mobile dots (smaller) -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+      <button onclick="currentSlide(1)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors active"></button>
+      <button onclick="currentSlide(2)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+      <button onclick="currentSlide(3)" class="slide-dot w-2.5 h-2.5 rounded-full bg-white/50 hover:bg-white transition-colors"></button>
+    </div>
   </div>
-
-  <!-- Arrows (hidden on phones ≤ 640 px) -->
-  <button onclick="plusSlides(-1)"
-          class="hidden sm:block absolute left-3 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-    </svg>
-  </button>
-  <button onclick="plusSlides(1)"
-          class="hidden sm:block absolute right-3 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors z-20">
-    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-    </svg>
-  </button>
 </section>
 
 
@@ -413,7 +389,7 @@
                 <!-- 0-5 years -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/zero.svg" alt="Xibelani Skirt 0-5 years" class="w-full h-64 object-cover">
+                        <img src="images/zero.svg" alt="Xibelani Skirt 0-5 years" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">Special</div>
                     </div>
                     <div class="p-6">
@@ -429,7 +405,7 @@
                 <!-- 6-10 years -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/six.svg" alt="Xibelani Skirt 6-10 years" class="w-full h-64 object-cover">
+                        <img src="images/six.svg" alt="Xibelani Skirt 6-10 years" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">Special</div>
                     </div>
                     <div class="p-6">
@@ -445,7 +421,7 @@
                 <!-- 11-16 years -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/eleven.svg" alt="Xibelani Skirt 11-16 years" class="w-full h-64 object-cover">
+                        <img src="images/eleven.svg" alt="Xibelani Skirt 11-16 years" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">Special</div>
                     </div>
                     <div class="p-6">
@@ -461,7 +437,7 @@
                 <!-- Size 28-34 -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/big.svg" alt="Xibelani Skirt Size 28-34" class="w-full h-64 object-cover">
+                        <img src="images/big.svg" alt="Xibelani Skirt Size 28-34" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">Special</div>
                     </div>
                     <div class="p-6">
@@ -477,7 +453,7 @@
                 <!-- Size 36+ -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/large.svg" alt="Xibelani Skirt Size 36+" class="w-full h-64 object-cover">
+                        <img src="images/large.svg" alt="Xibelani Skirt Size 36+" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">Special</div>
                     </div>
                     <div class="p-6">
@@ -499,7 +475,7 @@
                 <!-- 0-10 years -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/top1.svg" alt="Crochet Top 0-10 years" class="w-full h-64 object-cover">
+                        <img src="images/top1.svg" alt="Crochet Top 0-10 years" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">New</div>
                     </div>
                     <div class="p-6">
@@ -515,7 +491,7 @@
                 <!-- 11-16 years -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/top2.svg" alt="Crochet Top 11-16 years" class="w-full h-64 object-cover">
+                        <img src="images/top2.svg" alt="Crochet Top 11-16 years" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">New</div>
                     </div>
                     <div class="p-6">
@@ -531,7 +507,7 @@
                 <!-- Adults -->
                 <div class="product-card bg-white rounded-2xl shadow-lg overflow-hidden">
                     <div class="relative">
-                        <img src="images/top3.svg" alt="Crochet Top Adults" class="w-full h-64 object-cover">
+                        <img src="images/top3.svg" alt="Crochet Top Adults" class="w-auto h-auto max-w-full mx-auto">
                         <div class="absolute top-4 right-4 bg-gold text-black px-3 py-1 rounded-full text-sm font-semibold">New</div>
                     </div>
                     <div class="p-6">
@@ -547,6 +523,7 @@
         </div>
     </div>
 </section>
+
 
     <!-- Delivery Info -->
     <section class="bg-black py-12">
@@ -789,48 +766,7 @@
             }, 3000);
         }
 
-        // Hero Slideshow Functionality
-        let slideIndex = 1;
-        let slideInterval;
-
-        function showSlides(n) {
-            const slides = document.querySelectorAll('.slide');
-            const dots = document.querySelectorAll('.slide-dot');
-            
-            if (n > slides.length) { slideIndex = 1; }
-            if (n < 1) { slideIndex = slides.length; }
-            
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[slideIndex - 1].classList.add('active');
-            dots[slideIndex - 1].classList.add('active');
-        }
-
-        function plusSlides(n) {
-            clearInterval(slideInterval);
-            showSlides(slideIndex += n);
-            startAutoSlide();
-        }
-
-        function currentSlide(n) {
-            clearInterval(slideInterval);
-            showSlides(slideIndex = n);
-            startAutoSlide();
-        }
-
-        function startAutoSlide() {
-            slideInterval = setInterval(() => {
-                slideIndex++;
-                showSlides(slideIndex);
-            }, 5000);
-        }
-
-        // Initialize slideshow
-        document.addEventListener('DOMContentLoaded', function() {
-            showSlides(slideIndex);
-            startAutoSlide();
-        });
+        
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -846,5 +782,61 @@
             });
         });
     </script>
+
+    <script>
+/* =========  HERO SLIDESHOW  ========= */
+let slideIndex = 1;
+let slideInterval;
+
+/*  Utility: wrap around  */
+function showSlides(n) {
+  /* grab slides/dots from *each* slider on the page */
+  const sliders = document.querySelectorAll('.hero-slider');
+  sliders.forEach(slider => {
+    const slides = slider.querySelectorAll('.slide');
+    const dots   = slider.querySelectorAll('.slide-dot');
+
+    if (slides.length === 0) return;      // safety
+
+    /* wrap index */
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1)             { slideIndex = slides.length; }
+
+    slides.forEach(s => s.classList.remove('active'));
+    dots.forEach(d   => d.classList.remove('active'));
+
+    slides[slideIndex - 1].classList.add('active');
+    dots[slideIndex - 1].classList.add('active');
+  });
+}
+
+/*  Manual next / prev  */
+function plusSlides(n) {
+  clearInterval(slideInterval);
+  showSlides(slideIndex += n);
+  startAutoSlide();
+}
+
+/*  Dot click  */
+function currentSlide(n) {
+  clearInterval(slideInterval);
+  showSlides(slideIndex = n);
+  startAutoSlide();
+}
+
+/*  Auto-play  */
+function startAutoSlide() {
+  slideInterval = setInterval(() => {
+    slideIndex++;
+    showSlides(slideIndex);
+  }, 5000);
+}
+
+/*  Kick-off once DOM is ready  */
+window.addEventListener('DOMContentLoaded', () => {
+  showSlides(slideIndex);
+  startAutoSlide();
+});
+</script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'966de0f672728a34',t:'MTc1MzgwNTM0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
